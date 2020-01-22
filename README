@@ -5,3 +5,6 @@ docker image ls
 docker run -p 81:80 -itd 2nd_docker_build
 docker ps
 docker container ls 
+# If docker docker swarm is installed, we can create service, that will load balance application between swarm nodes.
+# docker service create --name vaibhav_website1 --replicas 3 -p 82:80 saavi21/2nd_docker_build_vaibhavlaxmi:v1
+# docker service create --name vaibhav_website2 --replicas 3 -p 83:80 2nd_docker_build
